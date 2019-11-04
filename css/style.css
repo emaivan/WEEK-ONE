@@ -1,0 +1,151 @@
+body {
+  background-image: url(../blurryforest.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  font-family: arial;
+  margin: 0px;
+}
+
+#helloWorld {
+  background-color: rgb(28, 41, 15);
+  margin-top: 0%;
+  padding: 2%;
+}
+
+div {
+  min-height: 100vh;
+  width: 100vw;
+  opacity: 0.7;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+img {
+  display: block;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 100%;
+  transition-duration: 1.5s;
+}
+
+p {
+  width: 40%;
+  margin: 10vh 10vw;
+  font-size: 2em;
+}
+
+a {
+  color: rgb(80, 145, 6);
+  transition: 0.8s ease;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10%;
+  font-size: 3em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#lower {
+  margin-top: 7%;
+}
+
+#lowest {
+  margin-top: 14%;
+}
+
+strong {
+  color: rgb(80, 145, 6);
+}
+
+#notMuch {
+  text-align: center;
+}
+
+.contrast {
+  background-color: rgb(28, 41, 15);
+  color: rgb(255,255,255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin: 0 20px;
+  transition: 0.8s ease;  /*allows to change property values smoothly, over a given duration*/
+}
+
+li:hover { /*makes li elements' font larger when hovered over them*/
+  font-size: 2em;
+  color: rgb(125, 220, 16);
+}
+
+a:hover {
+  font-size: 1.3em;
+  color: rgb(125, 220, 16);
+}
+
+img:hover {
+  width: 400px;
+  opacity: 1;
+}
+
+ img {
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+img:hover {
+    animation-name: jittery;
+}
+
+@keyframes jittery {
+    10% {
+        transform: translate(-2px, -3px) scale(1.01, 1.01);
+    }
+    20% {
+        transform: translate(3px, 2px) scale(.99, .99);
+    }
+    30% {
+        transform: translate(-4px, -5px) scale(1.01, 1.01);
+    }
+    40% {
+        transform: translate(2px, 3px) scale(1, 1);
+    }
+    50% {
+        transform: translate(-1px, -2px) scale(.98, .98);
+    }
+    60% {
+        transform: translate(0px, 3px) scale(1.02, 1.02);
+    }
+    70% {
+        transform: translate(-2px, -4px) scale(1, 1);
+    }
+    80% {
+        transform: translate(3px, 5px) scale(.99, .99);
+    }
+    90% {
+        transform: translate(-5px, -3px) scale(1.1, 1.1);
+    }
+    100% {
+        transform: translate(3px, 1px) scale(.98, .98);
+    }
+}
